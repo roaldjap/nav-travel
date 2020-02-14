@@ -34,3 +34,13 @@ code {
   flex-basis: 0;
   order: 1;
 }
+
+.content-wrapper{
+  position: relative;
+  white-space: nowrap;
+}
+
+.row-inline-block{
+  overflow: auto;
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+.ticket-wrapper{
+  display: inline-block;
+  text-align: center;
+  margin: 3px 5px 0;
+
+  .header{
+    padding: 22px 30px;
+  }
+
+  .red-badge{
+    color: #fff;
+    background: $red;
+    font-weight: 700;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+}
