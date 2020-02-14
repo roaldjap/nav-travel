@@ -60,7 +60,7 @@
     "products": [
       {
         "class":"Premier",
-        "status":"Last Spaces",
+        "status":"Sold Out",
         "price": "$500",
         "priceWithDiscount": "$436"
       },

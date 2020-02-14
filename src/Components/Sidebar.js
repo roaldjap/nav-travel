@@ -25,7 +25,7 @@ class Sidebar extends Component {
           <p className="title">Catamaran</p>
         </div>
 
-        <button onClick={this.props.loadSampleTickets}>Load Sample Data</button>
+        {/* <button onClick={this.props.loadSampleTickets}>Load Sample Data</button> */}
       </div>
     )
   }

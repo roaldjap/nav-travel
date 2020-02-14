@@ -3,8 +3,10 @@ $red: #db5c43;
 $pink: #e26a80;
 $yellow: #db5c43;
 $blue: #b0d7e1;
+$gray: #dadada;
+$dark-gray: darken($gray, 20%);
 
 // Font Family
-$font-family-san-serif: 'Monserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+$font-family-san-serif: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
