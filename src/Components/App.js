@@ -24,10 +24,14 @@ class App extends React.Component {
 
 	componentDidMount = () => {
 		this.loadSampleTickets();
-	};
+  };
+  
+  scrollingRight = () => {
+    this._rowContent.scrollLeft += 50;
+  }
 
 	render() {
-
+    var self = this;
 		return (
 			<div className="App">
 				<Grid>
@@ -37,7 +41,8 @@ class App extends React.Component {
 						</Col>
 						<Col md={9}>
 							<div className="content-wrapper">
-								<div className="row-inline-block">
+                <button className="scroller-right" onClick={this.scrollingRight}> &#9658; </button> 
+								<div className="row-inline-block"  ref={function (el) {self._rowContent = el}}>
 									{Object.keys(this.state.tickets).map(key => (
 										<Ticket key={key} details={this.state.tickets[key]} />
 									))}

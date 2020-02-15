@@ -44,3 +44,18 @@ code {
   overflow: auto;
   width: 100%;
 }
+
+.scroller-right{
+  &:focus {
+    outline: 0px;
+  }
+  position: absolute;
+  top: 20px;
+  right: -61px;
+  border: 0;
+  background: none;
+  color: #808080;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 25px;
+}

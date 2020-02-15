@@ -16,13 +16,13 @@ class Sidebar extends Component {
         <div className="wavy"></div>
         
         <div className="product-types premier">
-          <p className="title">Premier</p>
+          <p className="title">Premier &#9658;</p>
         </div>
         <div className="product-types premier-plus">
-          <p className="title">Premier Plus</p>
+          <p className="title">Premier Plus &#9658;</p>
         </div>
         <div className="product-types catamaran">
-          <p className="title">Catamaran</p>
+          <p className="title">Catamaran &#9658;</p>
         </div>
 
         {/* <button onClick={this.props.loadSampleTickets}>Load Sample Data</button> */}
