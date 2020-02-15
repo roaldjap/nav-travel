@@ -1,11 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<center><img src="video-demo.gif"/></center>
+<img src="video-demo.gif"/>
 
 ## Demo
 
-The React App was deployed here: <br/>
-`https://gracious-elion-3f9119.netlify.com/`
+The React App is deployed here: <br/>
+https://gracious-elion-3f9119.netlify.com/
 
 
 ## Installation
@@ -26,4 +26,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-
+&copy; 2020 - Roald Ignacio, 
