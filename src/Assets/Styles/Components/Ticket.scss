@@ -1,122 +1,122 @@
-.ticket-wrapper{
-  color: #808080;
-  display: inline-block;
-  text-align: center;
-  margin: 3px 5px 0;
-  // background: red;
+.ticket-wrapper {
+	color: #808080;
+	display: inline-block;
+	text-align: center;
+	margin: 3px 5px 0;
+	// background: red;
 
-  .header{
-    padding: 22px 30px;
-  }
+	.header {
+		padding: 22px 30px;
+	}
 
-  .red-badge{
-    color: #fff;
-    background: $red;
-    font-weight: 700;
-    padding: 5px 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-  }
+	.red-badge {
+		color: #fff;
+		background: $red;
+		font-weight: 700;
+		padding: 5px 20px;
+		border-radius: 20px;
+		margin-bottom: 20px;
+	}
 
-  .ticket-header, .rip, .ticket-footer{
-    background: #fff;
-  }
+	.ticket-header,
+	.rip,
+	.ticket-footer {
+		background: #fff;
+	}
 
-  .ticket{
-    margin: 25px 0;
-  }
+	.ticket {
+		margin: 25px 0;
+	}
 
-  .ticket-header{
-    padding: 5px;
-    border: 2px solid $gray;
-    border-radius: 10px 10px 0 0;
-    border-bottom: 0;
-    margin: 0;
-    min-height: 82.5px;
+	.ticket-header {
+		padding: 5px;
+		border: 2px solid $gray;
+		border-radius: 10px 10px 0 0;
+		border-bottom: 0;
+		margin: 0;
+		min-height: 82.5px;
 
-    .orig-price{
-      text-decoration: line-through;
-    }
+		.orig-price {
+			text-decoration: line-through;
+		}
 
-    .last-price{
-      font-size: 1.4em;
-      line-height: 0;
-      font-weight: 800;
-      color: $pink;
+		.last-price {
+			font-size: 1.4em;
+			line-height: 0;
+			font-weight: 800;
+			color: $pink;
 
-      &.no-discount{
-        margin-top: 58px;
-      }
-    }
-  }
+			&.no-discount {
+				margin-top: 58px;
+			}
+		}
+	}
 
+	.rip {
+		height: 20px;
+		margin: 0 10px;
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAYAAAB7Xa1eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAAaSURBVBhXY5g7f97/2XPn/AcCBmSMQ+I/AwB2eyNBlrqzUQAAAABJRU5ErkJggg==);
+		background-size: 4px 2px;
+		background-repeat: repeat-x;
+		background-position: center;
+		position: relative;
+		box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff;
 
-  .rip{
-    height: 20px;
-    margin: 0 10px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAYAAAB7Xa1eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAAaSURBVBhXY5g7f97/2XPn/AcCBmSMQ+I/AwB2eyNBlrqzUQAAAABJRU5ErkJggg==);
-    background-size: 4px 2px;
-    background-repeat: repeat-x;
-    background-position: center;
-    position: relative;
-    box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff;
+		&:after,
+		&:before {
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%) rotate(45deg);
+			transform: translate(-50%, -50%) rotate(45deg);
+			border: 2px solid transparent;
+			border-top-color: $gray;
+			border-right-color: $gray;
+			border-radius: 100%;
+			pointer-events: none;
+		}
 
-    &:after, &:before{
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%) rotate(45deg);
-              transform: translate(-50%, -50%) rotate(45deg);
-      border: 2px solid transparent;
-      border-top-color: $gray;
-      border-right-color: $gray;
-      border-radius: 100%;
-      pointer-events: none;
-    }
+		&:before {
+			left: -10px;
+		}
 
-    &:before{
-      left: -10px;
-    }
+		&:after {
+			-webkit-transform: translate(-50%, -50%) rotate(225deg);
+			transform: translate(-50%, -50%) rotate(225deg);
+			right: -34px;
+		}
 
-    &:after{
-      -webkit-transform: translate(-50%, -50%) rotate(225deg);
-      transform: translate(-50%, -50%) rotate(225deg);
-      right: -34px;
-    }
+		&.hide-bottom {
+			&:before {
+				border-right-color: transparent;
+			}
+			&:after {
+				border-top-color: transparent;
+			}
+		}
+	}
 
-    &.hide-bottom{
-      &:before{
-        border-right-color: transparent;
-      }
-      &:after{
-        border-top-color: transparent;
-      }
-    }
-  }
-  
-  .ticket-footer{
-    padding: 1px;
-    border: 2px solid $gray;
-    border-radius: 0 0 10px 10px;
-    border-top: 0px;
+	.ticket-footer {
+		padding: 1px;
+		border: 2px solid $gray;
+		border-radius: 0 0 10px 10px;
+		border-top: 0px;
 
-    &.sold-out{
-      color: $red;
-      border-color: transparent;
-    }
+		&.sold-out {
+			color: $red;
+			border-color: transparent;
+		}
 
-    &.last-spaces{
-      color: orange;
-    }
-    
-    .status{
-      margin-top: 8px;
-      font-size: 14px;
-      line-height: 0;
-    }
+		&.last-spaces {
+			color: orange;
+		}
 
-  }
-  
+		.status {
+			margin-top: 8px;
+			font-size: 14px;
+			line-height: 0;
+		}
+	}
 }
